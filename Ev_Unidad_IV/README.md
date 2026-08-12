@@ -5,19 +5,24 @@
 **Caso:** Sistema de Gestión de Pedidos
 
 ## Estructura del repositorio
-├── main.tex # Archivo principal LaTeX (actividades P1–P8)
+├── main.tex # Archivo principal LaTeX (actividades P1–P8; alcance de esta entrega)
 ├── main.pdf # PDF compilado del desarrollo (resultado final)
 ├── caratula.tex # Carátula para subir al LMS (SGA)
 ├── caratula.pdf # Carátula compilada, con URL del repo y capturas del cuestionario
 ├── README.md # Este archivo
-├── figuras/ # Imágenes de los diagramas UML (P1, P2, P3)
-│ ├── p1_diagrama_clases.png
+├── figuras/ # Imágenes de los diagramas UML dibujados a mano (P2)
+│ ├── p1_diagrama_clases.png # (referencia; el diagrama final de P1 se generó en TikZ dentro de main.tex)
 │ ├── p2_diagrama_actividades.png
 │ ├── p2b_diagrama_actividades_continuacion.png
-│ └── p3_diagrama_estados.png
+│ └── p3_diagrama_estados.png # (referencia; el diagrama final de P3 se generó en TikZ dentro de main.tex)
 └── capturas/ # Capturas del cuestionario del SGA (usadas en caratula.tex)
 ├── resumen_cuestionario.png
 └── evaluacion_intento.png
+
+> Los diagramas de clases (P1) y de máquina de estados (P3), así como el fragmento corregido
+> de P4, se generaron directamente en TikZ dentro de `main.tex` (opción explícitamente permitida
+> por el enunciado), por lo que no dependen de las imágenes PNG para compilar. El diagrama de
+> actividades (P2) se mantiene como imagen escaneada a mano.
 
 > Este proyecto no usa archivo `referencias.bib` porque no se citan fuentes bibliográficas
 > dentro del desarrollo (P1–P8); las referencias normativas se mencionan directamente en el
@@ -26,9 +31,12 @@
 ## Requisitos previos
 
 - Distribución LaTeX con `pdflatex` (por ejemplo, TeX Live 2023 o superior, o MiKTeX).
-- Paquetes utilizados (todos incluidos en una instalación `texlive-full` / `texlive-latex-extra`):
-  `babel` (spanish), `inputenc`, `fontenc`, `geometry`, `graphicx`, `booktabs`, `longtable`,
-  `array`, `xcolor`, `enumitem`, `hyperref`, `fancyhdr`, `titlesec`, `amssymb`, `placeins`, `float`.
+- Paquetes utilizados (todos incluidos en una instalación `texlive-full`; con `texlive-latex-extra`
+  más `texlive-pictures` también alcanza):
+  `babel` (spanish, con opción `provide=*` por compatibilidad con TeX Live 2023+), `inputenc`,
+  `fontenc`, `geometry`, `graphicx`, `booktabs`, `longtable`, `array`, `xcolor`, `enumitem`,
+  `hyperref`, `fancyhdr`, `titlesec`, `amssymb`, `placeins`, `float`, `tikz` (con las librerías
+  `shapes.multipart`, `shapes.geometric`, `positioning`, `arrows.meta`, `calc`, `fit`, `backgrounds`).
 
 ## Instrucciones de compilación
 
