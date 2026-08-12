@@ -18,7 +18,6 @@
 └── capturas/ # Capturas del cuestionario del SGA (usadas en caratula.tex)
 ├── resumen_cuestionario.png
 └── evaluacion_intento.png
-
 > Los diagramas de clases (P1) y de máquina de estados (P3), así como el fragmento corregido
 > de P4, se generaron directamente en TikZ dentro de `main.tex` (opción explícitamente permitida
 > por el enunciado), por lo que no dependen de las imágenes PNG para compilar. El diagrama de
